@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-editorial: 'Newsreader', serif;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading) !important;
+  letter-spacing: -0.03em;
+}
+
+.font-editorial {
+  font-family: var(--font-editorial) !important;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8272A;
+  border-radius: 3px;
+}
+
+/* Infinite Marquee Animation for Announcement Strip */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

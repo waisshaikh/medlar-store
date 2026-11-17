@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --color-dark: #111111;
+  --color-cream: #FAF7F2;
+  --color-red: #E8272A;
+  --color-gold: #C9A84C;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body { font-family: var(--font-sans); background: #fff; color: var(--color-dark); }
+.font-serif { font-family: var(--font-serif) !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #E8272A; border-radius: 3px; }
